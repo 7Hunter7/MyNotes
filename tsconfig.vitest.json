@@ -1,3 +1,4 @@
+// Конфигурация для тестов Vitest - настройки компилятора, специфичные для компиляции тестов Vitest.
 {
   "extends": "./tsconfig.app.json",
   "include": ["src/**/__tests__/*", "env.d.ts"],

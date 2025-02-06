@@ -1,3 +1,4 @@
+// Конфигурация для Node.js-скриптов
 {
   "extends": "@tsconfig/node22/tsconfig.json",
   "include": [
@@ -9,7 +10,7 @@
     "eslint.config.*"
   ],
   "compilerOptions": {
-    "noEmit": true,
+    "noEmit": true, // не генерировать JavaScript-файлы из TypeScript-файлов
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
 
     "module": "ESNext",
