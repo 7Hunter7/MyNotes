@@ -1,39 +1,26 @@
-/* Базовые настройки */
 {
   "compilerOptions": {
+    /* Базовые настройки */
     "target": "esnext",
     "module": "esnext",
-    "lib": ["esnext", "dom"],
     "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true, // для ускорения сборки
 
-    /* Строгий контроль типов */
-    "strict": true,
+    /* Строгий контроль типов (можно настроить позже в tsconfig.app.json) */
+    "strict": true, // Включаем по умолчанию, можно переопределить.
     "noImplicitAny": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "strictBindCallApply": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
+    "strictBindCallApply": true,
     "strictPropertyInitialization": true,
 
     /* Другие опции */
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    },
-    "types": ["vite/client"],
-
-    /* Vue Specific Options */
-    "jsx": "preserve",
-    "jsxFactory": "h",
-    "jsxFragmentFactory": "Fragment",
-    "experimentalDecorators": true,
-    "useDefineForClassFields": true
-  },
-  "include": ["src/**/*", "env.d.ts"],
-  "exclude": ["node_modules", "dist"]
+    }
+  }
 }
