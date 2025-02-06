@@ -1,6 +1,6 @@
 // Конфигурация для тестов Vitest - настройки компилятора, специфичные для компиляции тестов Vitest.
 {
-  "extends": "./tsconfig.app.json",
+  "extends": "./tsconfig.base.json",
   "include": ["src/**/__tests__/*", "env.d.ts"],
   "exclude": [],
   "compilerOptions": {
