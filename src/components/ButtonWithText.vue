@@ -19,8 +19,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, defineEmits } from 'vue'
-
 interface Props {
   text?: string
   hasIcon?: boolean
@@ -29,29 +27,7 @@ interface Props {
   isDisabled?: boolean
 }
 
-const props = defineProps<Props>({
-  text: {
-    type: String,
-    default: '',
-  },
-  hasIcon: {
-    type: Boolean,
-    default: false,
-  },
-  hasText: {
-    type: Boolean,
-    default: true,
-  },
-  isRound: {
-    type: Boolean,
-    default: false,
-  },
-  isDisabled: {
-    type: Boolean,
-    default: false,
-  },
-})
-
+const props = defineProps<Props>()
 const emit = defineEmits(['click'])
 </script>
 
