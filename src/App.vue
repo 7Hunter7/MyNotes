@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
   <header>
     <div class="wrapper">
@@ -12,6 +8,14 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
 
   <RouterView />
+  <main>
+    <ButtonWithText text="Вход" />
+  </main>
 </template>
+
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
+import ButtonWithText from '@/components/ButtonWithText.vue'
+</script>
 
 <style scoped></style>
