@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../fonts/cerapro-regular.eot');
+  src:
+    url('../fonts/cerapro-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-regular.woff2') format('woff2'),
+    url('../fonts/cerapro-regular.woff') format('woff'),
+    url('../fonts/cerapro-regular.ttf') format('truetype'),
+    url('../fonts/cerapro-regular.svg#cerapro-regular') format('svg');
+}
+
 :root {
   /* Шрифты  */
   --font-family: 'Montserrat', sans-serif;
