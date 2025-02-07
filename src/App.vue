@@ -20,7 +20,11 @@
       <p>Описание: {{ description }}</p>
     </div>
     <div>
-      <Note :note="myNote" :has-text="false" @delete="handleDelete" />
+      <NoteComponent :note="myNote" :has-text="false" @delete="handleDelete" />
+    </div>
+    <div>
+      <h1>Мои заметки</h1>
+      <NotesList />
     </div>
   </main>
 </template>
@@ -31,6 +35,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import ButtonWithText from '@/components/ButtonWithText.vue'
 import TextareaComponent from '@/components/TextareaComponent.vue'
 import NoteComponent from '@/components/NoteComponent.vue'
+import NotesList from '@/components/NotesList.vue'
 
 const description = ref('')
 
