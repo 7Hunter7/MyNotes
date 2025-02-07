@@ -171,7 +171,7 @@ const togglePasswordVisibility = () => {
   }
 }
 .input-error-message {
+  margin: 0.5rem 1.5rem;
   color: #ff7461;
-  margin-top: 0.5rem;
 }
 </style>
