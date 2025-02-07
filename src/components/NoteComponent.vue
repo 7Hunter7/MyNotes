@@ -37,7 +37,6 @@ interface Props {
 
 const props = defineProps<Props>()
 const emit = defineEmits(['delete'])
-
 const hasText = computed(() => props.hasText !== false)
 </script>
 

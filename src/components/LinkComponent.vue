@@ -13,19 +13,7 @@ interface Props {
   target?: '_blank' | '_self' | '_parent' | '_top' // Необязательный целевой атрибут
 }
 
-const props = defineProps<Props>({
-  href: {
-    type: String,
-    required: true,
-  },
-  target: {
-    type: String,
-    default: '_self',
-    validator: (value: string) => {
-      return ['_blank', '_self', '_parent', '_top'].includes(value)
-    },
-  },
-})
+const props = defineProps<Props>()
 </script>
 
 <style scoped>

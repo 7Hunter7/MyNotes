@@ -35,40 +35,7 @@ interface Props {
   autoResize?: boolean
 }
 
-const props = defineProps<Props>({
-  id: {
-    type: String,
-    default: () => uuidv4(),
-  },
-  label: {
-    type: String,
-    default: '',
-  },
-  modelValue: {
-    type: String,
-    required: true,
-  },
-  placeholder: {
-    type: String,
-    default: '',
-  },
-  isDisabled: {
-    type: Boolean,
-    default: false,
-  },
-  errorMessage: {
-    type: String,
-    default: '',
-  },
-  hasError: {
-    type: Boolean,
-    default: false,
-  },
-  autoResize: {
-    type: Boolean,
-    default: true,
-  },
-})
+const props = defineProps<Props>()
 
 const emit = defineEmits(['update:modelValue'])
 const isFocused = ref(false)

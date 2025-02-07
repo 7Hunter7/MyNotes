@@ -59,44 +59,7 @@ interface Props {
   hasError?: boolean
 }
 
-const props = defineProps<Props>({
-  id: {
-    type: String,
-    default: () => uuidv4(),
-  },
-  label: {
-    type: String,
-    default: '',
-  },
-  type: {
-    type: String,
-    default: 'text' as 'text' | 'email' | 'password',
-    validator: (value: string) => {
-      return ['text', 'email', 'password'].includes(value)
-    },
-  },
-  modelValue: {
-    type: String,
-    required: true,
-  },
-  placeholder: {
-    type: String,
-    default: '',
-  },
-  isDisabled: {
-    type: Boolean,
-    default: false,
-  },
-  errorMessage: {
-    type: String,
-    default: '',
-  },
-  hasError: {
-    type: Boolean,
-    default: false,
-  },
-})
-
+const props = defineProps<Props>()
 const emit = defineEmits(['update:modelValue'])
 const isFocused = ref(false)
 const passwordVisible = ref(false)
