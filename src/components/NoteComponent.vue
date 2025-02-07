@@ -3,7 +3,7 @@
     <h3 class="note__title">{{ note.title }}</h3>
     <p class="note__text">{{ note.text }}</p>
     <div class="note__actions">
-      <Button :isRound="true" :hasText="hasText" @click="emit('delete', note.id)">
+      <ButtonWithText :isRound="true" :hasText="hasText" @click="emit('delete', note.id)">
         <template #icon>
           <!-- Иконка крестика (удалить) -->
           <svg
@@ -17,14 +17,14 @@
           </svg>
         </template>
         <template v-if="hasText">Удалить</template>
-      </Button>
+      </ButtonWithText>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import Button from './Button.vue'
 import { computed } from 'vue'
+import ButtonWithText from './ButtonWithText.vue'
 
 interface Props {
   note: {
