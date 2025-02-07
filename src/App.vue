@@ -1,4 +1,5 @@
 <template>
+  <AppHeader />
   <header>
     <div class="wrapper">
       <nav>
@@ -29,6 +30,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
+import AppHeader from '@/components/AppHeader.vue'
 import ButtonWithText from '@/components/ButtonWithText.vue'
 import TextareaComponent from '@/components/TextareaComponent.vue'
 import NotesList from '@/components/NotesList.vue'
