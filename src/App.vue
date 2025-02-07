@@ -12,8 +12,8 @@
     <ButtonWithText text="Вход" />
     <div>
       <TextareaComponent
-        label="Описание"
-        placeholder="Введите описание"
+        label="Введите значение"
+        placeholder="Введите значение"
         :model-value="description"
         @update:model-value="description = $event"
       />

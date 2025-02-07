@@ -65,13 +65,13 @@ const adjustHeight = () => {
   font-size: 18px;
   line-height: 156%;
   .textarea-label {
-    margin-bottom: 0.5rem;
+    margin: 1.25rem 1.5rem 0.5rem 1.5rem;
     color: var(--gray);
   }
   .textarea {
     border: 2px solid var(--white);
     border-radius: 2.25rem;
-    padding: 1rem;
+    padding: 1rem 1.75rem;
     width: 42.375rem;
     height: 17.5rem;
     color: var(--dark);
