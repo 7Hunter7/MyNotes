@@ -39,13 +39,13 @@ const emit = defineEmits(['click'])
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 2rem;
   cursor: pointer;
-  transition: background-color 0.2s ease;
   color: var(--white);
   background-color: var(--green-light);
+  transition: background-color 0.2s ease;
   &:hover {
     background-color: var(--green-middle);
   }
@@ -71,7 +71,6 @@ const emit = defineEmits(['click'])
     padding: 0;
   }
   &__icon {
-    margin-right: 0.5rem;
     display: inline-flex;
   }
   &__text {
