@@ -43,8 +43,8 @@ const handleClick = () => {
 
 <style scoped lang="scss">
 .header {
-  max-width: 100rem;
-  padding: 2.5rem 10rem;
+  max-width: inherit;
+  padding: 2.5rem 0;
   &__container {
     display: flex;
     flex-direction: row;
@@ -53,6 +53,12 @@ const handleClick = () => {
     &_logo {
       height: 50px;
     }
+  }
+}
+
+@media (min-width: 1366px) {
+  .header {
+    padding: 1.25rem 0;
   }
 }
 </style>

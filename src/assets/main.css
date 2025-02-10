@@ -1,12 +1,17 @@
 @import './base.css';
 
 #app {
-  max-width: 1920px;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
 body {
+  max-width: 100rem;
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: var(--font-family);
   font-size: 16px;
   font-weight: 500;
@@ -29,16 +34,23 @@ a,
     background-color: hsla(160, 100%, 37%, 0.2);
   }
 }
+*/
 
-@media (min-width: 1024px) {
+@media (min-width: 1366px) {
   body {
-    display: flex;
-    place-items: center;
+    max-width: 75.375rem;
+    padding: 0 5rem;
   }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+}
+@media (min-width: 768px) {
+  body {
+    max-width: 43rem;
+    padding: 0 2.5rem;
   }
-} */
+}
+@media (min-width: 360px) {
+  body {
+    max-width: 20rem;
+    padding: 0 1.25rem;
+  }
+}

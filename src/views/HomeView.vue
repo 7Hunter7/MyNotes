@@ -14,8 +14,6 @@ import Notes from '/Notes.png'
 
 <style scoped lang="scss">
 .main {
-  max-width: 100rem;
-  padding: 0px 5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -47,6 +45,19 @@ import Notes from '/Notes.png'
     display: block;
     width: auto;
     height: 54rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  .main {
+  }
+}
+@media (min-width: 768px) {
+  .main {
+  }
+}
+@media (min-width: 360px) {
+  .main {
   }
 }
 </style>
