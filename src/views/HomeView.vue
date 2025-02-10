@@ -6,5 +6,5 @@
 </template>
 
 <script setup lang="ts">
-import ButtonWithText from '@/components/ButtonWithText.vue'
+import ButtonWithText from '@/components/ButtonComponent.vue'
 </script>

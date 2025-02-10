@@ -27,7 +27,10 @@ interface Props {
   isDisabled?: boolean
 }
 
-const props = defineProps<Props>()
+const props = withDefaults(defineProps<Props>(), {
+  hasIcon: false,
+  hasText: false,
+})
 const emit = defineEmits(['click'])
 </script>
 

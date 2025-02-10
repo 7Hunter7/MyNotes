@@ -10,7 +10,7 @@
 
   <RouterView />
   <main>
-    <ButtonWithText text="Вход" />
+    <ButtonComponent text="Вход" />
     <div>
       <TextareaComponent
         label="Введите значение"
@@ -31,7 +31,7 @@
 import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import AppHeader from '@/components/AppHeader.vue'
-import ButtonWithText from '@/components/ButtonWithText.vue'
+import ButtonComponent from '@/components/ButtonComponent.vue'
 import TextareaComponent from '@/components/TextareaComponent.vue'
 import NotesList from '@/components/NotesList.vue'
 

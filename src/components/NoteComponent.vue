@@ -3,7 +3,13 @@
     <h3 class="note__title">{{ note.title }}</h3>
     <p class="note__text">{{ note.text }}</p>
     <div class="note__actions">
-      <ButtonWithText :isRound="true" :hasText="hasText" @click="emit('delete', note.id)">
+      <ButtonComponent
+        :isRound="false"
+        :hasIcon="true"
+        :hasText="true"
+        text="Удалить"
+        @click="emit('delete', note.id)"
+      >
         <template #icon>
           <!-- Иконка крестика (удалить) -->
           <svg
@@ -16,15 +22,14 @@
             <path d="M1 1L17 17M17 1L1 17" stroke="white" stroke-width="2" stroke-linecap="round" />
           </svg>
         </template>
-        <template v-if="hasText">Удалить</template>
-      </ButtonWithText>
+      </ButtonComponent>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import ButtonWithText from './ButtonWithText.vue'
+import ButtonComponent from './ButtonComponent.vue'
 
 interface Props {
   note: {

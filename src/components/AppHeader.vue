@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__container">
       <img class="header__container_logo" :src="Logo" alt="logo" />
-      <ButtonWithText isRound :hasText="hasText" text="Вход" @click="handleClick">
+      <ButtonComponent :hasIcon="true" :hasText="true" text="Вход" @click="handleClick">
         <template #icon>
           <!-- Иконка входа-->
           <svg
@@ -17,14 +17,13 @@
             />
           </svg>
         </template>
-      </ButtonWithText>
+      </ButtonComponent>
     </div>
   </header>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
-import ButtonWithText from './ButtonWithText.vue'
+import ButtonComponent from './ButtonComponent.vue'
 import Logo from '/logo.png'
 
 interface Props {
@@ -40,7 +39,6 @@ const handleClick = () => {
     console.error('Произошла ошибка:', error)
   }
 }
-const hasText = computed(() => props.hasText !== false)
 </script>
 
 <style scoped lang="scss">
