@@ -14,13 +14,12 @@ import Notes from '/Notes.png'
 
 <style scoped lang="scss">
 .main {
-  max-width: 120rem;
+  max-width: 100rem;
   padding: 0px 5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 13.375rem;
 
   &__container {
     display: flex;
@@ -28,14 +27,16 @@ import Notes from '/Notes.png'
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 2.5rem;
-
     &_title {
+      max-width: 30.5rem;
       font-weight: 900;
       font-size: 6.5rem;
       line-height: 100%;
+      margin-bottom: 2.5rem;
     }
     &_description {
+      margin-top: 0;
+      max-width: 24rem;
       font-weight: 400;
       font-size: 2rem;
       line-height: 150%;
@@ -43,7 +44,8 @@ import Notes from '/Notes.png'
     }
   }
   &__img {
-    width: 100%;
+    display: block;
+    width: auto;
     height: 54rem;
   }
 }
