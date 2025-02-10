@@ -43,7 +43,7 @@ const handleClick = () => {
 
 <style scoped lang="scss">
 .header {
-  width: 100%;
+  max-width: 120rem;
   padding: 2.5rem 10rem;
   &__container {
     display: flex;
