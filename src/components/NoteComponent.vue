@@ -50,17 +50,22 @@ const hasText = computed(() => props.hasText !== false)
   margin: 1.25rem;
   max-width: 30rem;
   min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
   padding: 1.25rem 1.75rem;
   border-radius: 0.75rem;
   background-color: var(--green-light);
   border-bottom: 1px solid var(--green-middle);
   box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
+
   &:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   }
   &__title {
-    text-align: left;
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 1.5rem;
@@ -78,9 +83,9 @@ const hasText = computed(() => props.hasText !== false)
     margin-bottom: 0rem;
   }
   &__actions {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 0.5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
   }
 }
 </style>
